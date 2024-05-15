@@ -1,0 +1,20 @@
+{
+  "modifier": {
+    "prototype": "adder",
+    "BW": 32,
+    "N": 1000000,
+    "amount": -1,
+    "start": 1,
+    "end": 10000,
+    "step": 10,
+    "mode": "log"
+  },
+  "runner": {
+    "simulator": "all"
+  },
+  "dataProcessor": {
+    "format": "chart",
+    "saveOriginal": true,
+    "description": "This part will be attached to the files name of results"
+  }
+}

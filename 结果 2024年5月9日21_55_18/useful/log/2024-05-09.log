@@ -1,0 +1,1420 @@
+2024-05-09 00:11:04.861 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:11:04.863 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 100,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:11:04.863 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:11:04.863 | INFO     | modifier:generate_array:65 - generated array is:[100, 1000, 10000, 100000, 1000000]
+2024-05-09 00:11:04.863 | INFO     | modifier:generate_array:67 - index is:5
+2024-05-09 00:11:04.863 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f1845751e50>}
+2024-05-09 00:11:04.863 | INFO     | runner:run:34 - running 0
+2024-05-09 00:11:04.863 | INFO     | modifier:modify:70 - Modifying index is:5
+2024-05-09 00:11:04.865 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:11:04.865 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:11:13.102 | INFO     | runner:run:34 - running 1
+2024-05-09 00:11:13.103 | INFO     | modifier:modify:70 - Modifying index is:4
+2024-05-09 00:11:13.104 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:11:13.104 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:11:20.795 | INFO     | runner:run:34 - running 2
+2024-05-09 00:11:20.796 | INFO     | modifier:modify:70 - Modifying index is:3
+2024-05-09 00:11:20.797 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:11:20.797 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:11:25.017 | INFO     | runner:run:34 - running 3
+2024-05-09 00:11:25.018 | INFO     | modifier:modify:70 - Modifying index is:2
+2024-05-09 00:11:25.018 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:11:25.018 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:11:43.232 | INFO     | runner:run:34 - running 4
+2024-05-09 00:11:43.233 | INFO     | modifier:modify:70 - Modifying index is:1
+2024-05-09 00:11:43.233 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:11:43.234 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:13:51.537 | INFO     | dataProcessor:__init__:22 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:13:51.538 | INFO     | dataProcessor:integrate_results:43 - Found files with 'iv' in their names.
+2024-05-09 00:13:51.540 | INFO     | dataProcessor:integrate_results:45 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:13:51.540 | INFO     | dataProcessor:integrate_results:47 - Found files with 'qs' in their names.
+2024-05-09 00:13:51.541 | INFO     | dataProcessor:integrate_results:49 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:13:51.547 | INFO     | dataProcessor:json2df:67 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:13:51.550 | INFO     | dataProcessor:json2df:71 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:13:51.551 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result___.json
+2024-05-09 00:13:51.551 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_1000000.json
+2024-05-09 00:13:51.552 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_1000000.json
+2024-05-09 00:13:51.552 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_100000.json
+2024-05-09 00:13:51.552 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_100000.json
+2024-05-09 00:13:51.552 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:13:51.552 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:13:51.552 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_1000.json
+2024-05-09 00:13:51.553 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_1000.json
+2024-05-09 00:13:51.553 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_100.json
+2024-05-09 00:13:51.553 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_100.json
+2024-05-09 00:13:51.553 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_-1.json
+2024-05-09 00:13:51.553 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_-1.json
+2024-05-09 00:13:51.555 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_10000.json
+2024-05-09 00:13:51.555 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_10000.json
+2024-05-09 00:13:51.556 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_1000.json
+2024-05-09 00:13:51.557 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_1000.json
+2024-05-09 00:13:51.557 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_100.json
+2024-05-09 00:13:51.558 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_100.json
+2024-05-09 00:13:51.558 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_91.json
+2024-05-09 00:13:51.558 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_91.json
+2024-05-09 00:13:51.559 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_81.json
+2024-05-09 00:13:51.560 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_81.json
+2024-05-09 00:13:51.560 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_71.json
+2024-05-09 00:13:51.561 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_71.json
+2024-05-09 00:13:51.561 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_61.json
+2024-05-09 00:13:51.561 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_61.json
+2024-05-09 00:13:51.562 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_51.json
+2024-05-09 00:13:51.563 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_51.json
+2024-05-09 00:13:51.564 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_41.json
+2024-05-09 00:13:51.564 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_41.json
+2024-05-09 00:13:51.565 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_31.json
+2024-05-09 00:13:51.566 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_31.json
+2024-05-09 00:13:51.566 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_21.json
+2024-05-09 00:13:51.566 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_21.json
+2024-05-09 00:13:51.567 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_11.json
+2024-05-09 00:13:51.567 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_11.json
+2024-05-09 00:13:51.568 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_10.json
+2024-05-09 00:13:51.568 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_10.json
+2024-05-09 00:13:51.569 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_9.json
+2024-05-09 00:13:51.570 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_9.json
+2024-05-09 00:13:51.570 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_8.json
+2024-05-09 00:13:51.571 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_8.json
+2024-05-09 00:13:51.571 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_7.json
+2024-05-09 00:13:51.572 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_7.json
+2024-05-09 00:13:51.572 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_6.json
+2024-05-09 00:13:51.573 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_6.json
+2024-05-09 00:13:51.574 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_5.json
+2024-05-09 00:13:51.574 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_5.json
+2024-05-09 00:13:51.575 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_4.json
+2024-05-09 00:13:51.575 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_4.json
+2024-05-09 00:13:51.575 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_3.json
+2024-05-09 00:13:51.576 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_3.json
+2024-05-09 00:13:51.576 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_2.json
+2024-05-09 00:13:51.577 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_2.json
+2024-05-09 00:13:51.577 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_amount_1.json
+2024-05-09 00:13:51.578 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_amount_1.json
+2024-05-09 00:13:51.578 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_BW_1.json
+2024-05-09 00:13:51.579 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_BW_1.json
+2024-05-09 00:13:51.579 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:13:51.579 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:13:51.619 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount.json
+2024-05-09 00:13:51.620 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount.json
+2024-05-09 00:13:51.621 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv.csv
+2024-05-09 00:13:51.622 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs.csv
+2024-05-09 00:13:51.623 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N.json
+2024-05-09 00:13:51.623 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N.json
+2024-05-09 00:13:51.646 | INFO     | dataProcessor:json2df:67 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:13:51.662 | INFO     | dataProcessor:json2df:71 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:13:51.663 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:13:51.663 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:13:51.664 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount.json
+2024-05-09 00:13:51.664 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount.json
+2024-05-09 00:13:51.664 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv.csv
+2024-05-09 00:13:51.665 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs.csv
+2024-05-09 00:13:51.665 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N.json
+2024-05-09 00:13:51.665 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N.json
+2024-05-09 00:13:51.666 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:16:48.381 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:16:48.382 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 100,
+        "end": 100000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:16:48.382 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 100000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:16:48.382 | INFO     | modifier:generate_array:65 - generated array is:[100, 1000, 10000, 100000, 1000000, 10000000, 100000000]
+2024-05-09 00:16:48.382 | INFO     | modifier:generate_array:67 - index is:7
+2024-05-09 00:16:48.382 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fd0df565460>}
+2024-05-09 00:16:48.382 | INFO     | runner:run:34 - running 0
+2024-05-09 00:16:48.383 | INFO     | modifier:modify:70 - Modifying index is:7
+2024-05-09 00:16:48.383 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:16:48.383 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:16:51.886 | INFO     | runner:run:34 - running 1
+2024-05-09 00:16:51.887 | INFO     | modifier:modify:70 - Modifying index is:6
+2024-05-09 00:16:51.887 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:16:51.887 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:16:55.137 | INFO     | runner:run:34 - running 2
+2024-05-09 00:16:55.138 | INFO     | modifier:modify:70 - Modifying index is:5
+2024-05-09 00:16:55.138 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:16:55.139 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:16:58.727 | INFO     | runner:run:34 - running 3
+2024-05-09 00:16:58.728 | INFO     | modifier:modify:70 - Modifying index is:4
+2024-05-09 00:16:58.728 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:16:58.729 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:17:06.148 | INFO     | runner:run:34 - running 4
+2024-05-09 00:17:06.149 | INFO     | modifier:modify:70 - Modifying index is:3
+2024-05-09 00:17:06.149 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:17:06.149 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:17:56.950 | INFO     | runner:run:34 - running 5
+2024-05-09 00:17:56.951 | INFO     | modifier:modify:70 - Modifying index is:2
+2024-05-09 00:17:56.951 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:17:56.951 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:21:34.375 | INFO     | runner:run:34 - running 6
+2024-05-09 00:21:34.435 | INFO     | modifier:modify:70 - Modifying index is:1
+2024-05-09 00:21:34.455 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:21:34.457 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:21:48.189 | INFO     | dataProcessor:__init__:22 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:21:48.275 | INFO     | dataProcessor:integrate_results:43 - Found files with 'iv' in their names.
+2024-05-09 00:21:48.296 | INFO     | dataProcessor:integrate_results:45 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:21:48.299 | INFO     | dataProcessor:integrate_results:47 - Found files with 'qs' in their names.
+2024-05-09 00:21:48.412 | INFO     | dataProcessor:integrate_results:49 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:21:49.150 | INFO     | dataProcessor:json2df:67 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:21:49.158 | INFO     | dataProcessor:json2df:71 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:21:49.160 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_100.json
+2024-05-09 00:21:49.160 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_1000.json
+2024-05-09 00:21:49.160 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_1000.json
+2024-05-09 00:21:49.160 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:21:49.160 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:21:49.160 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_100000.json
+2024-05-09 00:21:49.161 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_100000.json
+2024-05-09 00:21:49.161 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_1000000.json
+2024-05-09 00:21:49.161 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_1000000.json
+2024-05-09 00:21:49.161 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_10000000.json
+2024-05-09 00:21:49.161 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_10000000.json
+2024-05-09 00:21:49.161 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_100000000.json
+2024-05-09 00:21:49.162 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_qs_N_100000000.json
+2024-05-09 00:21:49.162 | INFO     | dataProcessor:clear_results:58 - Deleted file: ../outputs/result/result_iv_N_100.json
+2024-05-09 00:21:49.169 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:21:49.171 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:21:49.174 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount.json
+2024-05-09 00:21:49.175 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount.json
+2024-05-09 00:21:49.176 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv.csv
+2024-05-09 00:21:49.176 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs.csv
+2024-05-09 00:21:49.177 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N.json
+2024-05-09 00:21:49.177 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N.json
+2024-05-09 00:21:49.183 | INFO     | dataProcessor:json2df:67 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:21:49.189 | INFO     | dataProcessor:json2df:71 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:21:49.191 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:21:49.191 | ERROR    | dataProcessor:copy_files_to_useful:90 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:21:49.192 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount.json
+2024-05-09 00:21:49.193 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount.json
+2024-05-09 00:21:49.193 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv.csv
+2024-05-09 00:21:49.193 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs.csv
+2024-05-09 00:21:49.193 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N.json
+2024-05-09 00:21:49.194 | INFO     | dataProcessor:copy_files_to_useful:88 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N.json
+2024-05-09 00:21:49.194 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:27:38.088 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:27:38.088 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 1,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:27:38.089 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:27:38.089 | INFO     | modifier:generate_array:65 - generated array is:[1, 100, 10000, 1000000]
+2024-05-09 00:27:38.089 | INFO     | modifier:generate_array:67 - index is:4
+2024-05-09 00:27:38.089 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fe92af38df0>}
+2024-05-09 00:27:38.089 | INFO     | runner:run:34 - running 0
+2024-05-09 00:27:38.089 | INFO     | modifier:modify:70 - Modifying index is:4
+2024-05-09 00:27:38.089 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:27:38.090 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:27:41.357 | INFO     | runner:run:34 - running 1
+2024-05-09 00:27:41.357 | INFO     | modifier:modify:70 - Modifying index is:3
+2024-05-09 00:27:41.358 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:27:41.358 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:27:44.279 | INFO     | runner:run:34 - running 2
+2024-05-09 00:27:44.280 | INFO     | modifier:modify:70 - Modifying index is:2
+2024-05-09 00:27:44.280 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:27:44.280 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:27:47.543 | INFO     | runner:run:34 - running 3
+2024-05-09 00:27:47.544 | INFO     | modifier:modify:70 - Modifying index is:1
+2024-05-09 00:27:47.544 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:27:47.544 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:28:39.424 | INFO     | dataProcessor:__init__:23 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:28:39.426 | INFO     | dataProcessor:integrate_results:49 - Found files with 'iv' in their names.
+2024-05-09 00:28:39.427 | INFO     | dataProcessor:integrate_results:51 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:28:39.427 | INFO     | dataProcessor:integrate_results:53 - Found files with 'qs' in their names.
+2024-05-09 00:28:39.428 | INFO     | dataProcessor:integrate_results:55 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:31:07.617 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:31:07.617 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 1,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:31:07.618 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:31:07.618 | INFO     | modifier:generate_array:65 - generated array is:[1, 100, 10000, 1000000]
+2024-05-09 00:31:07.618 | INFO     | modifier:generate_array:67 - index is:4
+2024-05-09 00:31:07.618 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f200f7a1df0>}
+2024-05-09 00:31:07.618 | INFO     | runner:run:34 - running 0
+2024-05-09 00:31:07.618 | INFO     | modifier:modify:70 - Modifying index is:4
+2024-05-09 00:31:07.618 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:31:07.619 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:31:11.055 | INFO     | runner:run:34 - running 1
+2024-05-09 00:31:11.056 | INFO     | modifier:modify:70 - Modifying index is:3
+2024-05-09 00:31:11.057 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:31:11.057 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:31:14.309 | INFO     | runner:run:34 - running 2
+2024-05-09 00:31:14.310 | INFO     | modifier:modify:70 - Modifying index is:2
+2024-05-09 00:31:14.310 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:31:14.311 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:31:17.948 | INFO     | runner:run:34 - running 3
+2024-05-09 00:31:17.949 | INFO     | modifier:modify:70 - Modifying index is:1
+2024-05-09 00:31:17.950 | INFO     | modifier:load_prototype:123 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:31:17.950 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:32:04.930 | INFO     | dataProcessor:__init__:27 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:32:04.932 | INFO     | dataProcessor:integrate_results:53 - Found files with 'iv' in their names.
+2024-05-09 00:32:04.933 | INFO     | dataProcessor:integrate_results:55 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:32:04.934 | INFO     | dataProcessor:integrate_results:57 - Found files with 'qs' in their names.
+2024-05-09 00:32:04.934 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:33:50.282 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:33:50.283 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 10,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:33:50.283 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:33:50.283 | INFO     | modifier:generate_array:67 - generated array is:[10, 1000, 100000]
+2024-05-09 00:33:50.283 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 00:33:50.283 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:33:50.284 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f3dd4163460>}
+2024-05-09 00:33:50.284 | INFO     | runner:run:34 - running 0
+2024-05-09 00:33:50.284 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 00:33:50.284 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:33:50.284 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:33:53.628 | INFO     | runner:run:34 - running 1
+2024-05-09 00:33:53.629 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:33:53.629 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:33:53.629 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:33:56.915 | INFO     | runner:run:34 - running 2
+2024-05-09 00:33:56.916 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:33:56.916 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:33:56.916 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:34:04.268 | INFO     | dataProcessor:__init__:27 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:34:04.270 | INFO     | dataProcessor:integrate_results:53 - Found files with 'iv' in their names.
+2024-05-09 00:34:04.272 | INFO     | dataProcessor:integrate_results:55 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:34:04.272 | INFO     | dataProcessor:integrate_results:57 - Found files with 'qs' in their names.
+2024-05-09 00:34:04.274 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:36:14.175 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:36:14.175 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 10,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:36:14.175 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:36:14.176 | INFO     | modifier:generate_array:67 - generated array is:[10, 1000, 100000]
+2024-05-09 00:36:14.176 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 00:36:14.176 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:36:14.176 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fc92fe7fdf0>}
+2024-05-09 00:36:14.176 | INFO     | runner:run:34 - running 0
+2024-05-09 00:36:14.176 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 00:36:14.176 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:36:14.176 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:36:17.192 | INFO     | runner:run:34 - running 1
+2024-05-09 00:36:17.192 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:36:17.193 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:36:17.193 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:36:26.202 | INFO     | runner:run:34 - running 2
+2024-05-09 00:36:26.203 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:36:26.203 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:36:26.204 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:36:33.529 | INFO     | dataProcessor:__init__:27 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:36:33.530 | INFO     | dataProcessor:integrate_results:53 - Found files with 'iv' in their names.
+2024-05-09 00:36:33.531 | INFO     | dataProcessor:integrate_results:55 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:36:33.532 | INFO     | dataProcessor:integrate_results:57 - Found files with 'qs' in their names.
+2024-05-09 00:36:33.532 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:36:33.538 | INFO     | dataProcessor:json2df:77 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:36:33.542 | INFO     | dataProcessor:json2df:81 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:36:33.543 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_10.json
+2024-05-09 00:36:33.543 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_10.json
+2024-05-09 00:36:33.543 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_1000.json
+2024-05-09 00:36:33.544 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_1000.json
+2024-05-09 00:36:33.544 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_100000.json
+2024-05-09 00:36:33.544 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_100000.json
+2024-05-09 00:36:33.544 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_1.json
+2024-05-09 00:36:33.544 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_1.json
+2024-05-09 00:36:33.544 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_100.json
+2024-05-09 00:36:33.545 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_100.json
+2024-05-09 00:36:33.545 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:36:33.545 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:36:33.545 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_iv_N_1000000.json
+2024-05-09 00:36:33.545 | INFO     | dataProcessor:clear_results:68 - Deleted file: ../outputs/result/result_qs_N_1000000.json
+2024-05-09 00:36:33.546 | INFO     | dataProcessor:copy_files_to_useful:98 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N.json
+2024-05-09 00:36:33.547 | INFO     | dataProcessor:copy_files_to_useful:98 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N.json
+2024-05-09 00:36:33.548 | INFO     | dataProcessor:copy_files_to_useful:98 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv.csv
+2024-05-09 00:36:33.549 | INFO     | dataProcessor:copy_files_to_useful:98 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs.csv
+2024-05-09 00:36:33.550 | ERROR    | dataProcessor:copy_files_to_useful:100 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:36:33.550 | ERROR    | dataProcessor:copy_files_to_useful:100 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:36:33.550 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:38:46.420 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:38:46.421 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 10,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:38:46.421 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:38:46.421 | INFO     | modifier:generate_array:67 - generated array is:[10, 1000, 100000]
+2024-05-09 00:38:46.421 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 00:38:46.421 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:38:46.422 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fcc33a72df0>}
+2024-05-09 00:38:46.422 | INFO     | runner:run:34 - running 0
+2024-05-09 00:38:46.422 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 00:38:46.422 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:38:46.422 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:38:49.789 | INFO     | runner:run:34 - running 1
+2024-05-09 00:38:49.790 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:38:49.790 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:38:49.791 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:38:53.181 | INFO     | runner:run:34 - running 2
+2024-05-09 00:38:53.181 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:38:53.182 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:38:53.182 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:39:00.077 | INFO     | dataProcessor:__init__:27 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:39:00.077 | INFO     | dataProcessor:integrate_results:52 - Found files with 'iv' in their names.
+2024-05-09 00:39:00.078 | INFO     | dataProcessor:integrate_results:54 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:39:00.079 | INFO     | dataProcessor:integrate_results:56 - Found files with 'qs' in their names.
+2024-05-09 00:39:00.079 | INFO     | dataProcessor:integrate_results:58 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:39:00.085 | INFO     | dataProcessor:json2df:77 - Final results of 'IVerilog' at:../outputs/result/final_result_iv_2024-05-09_00-39-00.csv
+2024-05-09 00:39:00.089 | INFO     | dataProcessor:json2df:82 - Final results of 'Questasim' at:../outputs/result/final_result_qs_2024-05-09_00-39-00.csv
+2024-05-09 00:39:00.090 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_iv_N_100000.json
+2024-05-09 00:39:00.090 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_qs_N_100000.json
+2024-05-09 00:39:00.090 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_iv_N_10.json
+2024-05-09 00:39:00.090 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_qs_N_10.json
+2024-05-09 00:39:00.091 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_iv_N_1000.json
+2024-05-09 00:39:00.091 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_qs_N_1000.json
+2024-05-09 00:39:00.091 | INFO     | dataProcessor:copy_files_to_useful:100 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N.json
+2024-05-09 00:39:00.091 | INFO     | dataProcessor:copy_files_to_useful:100 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N.json
+2024-05-09 00:39:00.092 | INFO     | dataProcessor:copy_files_to_useful:100 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv.csv
+2024-05-09 00:39:00.092 | INFO     | dataProcessor:copy_files_to_useful:100 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs.csv
+2024-05-09 00:39:00.092 | ERROR    | dataProcessor:copy_files_to_useful:102 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:39:00.092 | ERROR    | dataProcessor:copy_files_to_useful:102 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:39:00.093 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:42:12.848 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:42:12.849 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 10,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:42:12.849 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:42:12.849 | INFO     | modifier:generate_array:67 - generated array is:[10, 1000, 100000]
+2024-05-09 00:42:12.849 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 00:42:12.849 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:42:12.850 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7faa3f0d4df0>}
+2024-05-09 00:42:12.850 | INFO     | runner:run:34 - running 0
+2024-05-09 00:42:12.850 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 00:42:12.850 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:42:12.850 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:42:16.209 | INFO     | runner:run:34 - running 1
+2024-05-09 00:42:16.210 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:42:16.210 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:42:16.210 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:42:19.508 | INFO     | runner:run:34 - running 2
+2024-05-09 00:42:19.509 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:42:19.509 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:42:19.509 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:42:26.879 | INFO     | dataProcessor:__init__:27 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:42:26.880 | INFO     | dataProcessor:integrate_results:52 - Found files with 'iv' in their names.
+2024-05-09 00:42:26.881 | INFO     | dataProcessor:integrate_results:54 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:42:26.881 | INFO     | dataProcessor:integrate_results:56 - Found files with 'qs' in their names.
+2024-05-09 00:42:26.882 | INFO     | dataProcessor:integrate_results:58 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:42:26.887 | INFO     | dataProcessor:json2df:76 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:42:26.889 | INFO     | dataProcessor:json2df:80 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:42:26.890 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_iv_N_100000.json
+2024-05-09 00:42:26.891 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_qs_N_100000.json
+2024-05-09 00:42:26.891 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_iv_N_10.json
+2024-05-09 00:42:26.891 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_qs_N_10.json
+2024-05-09 00:42:26.891 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_iv_N_1000.json
+2024-05-09 00:42:26.891 | INFO     | dataProcessor:clear_results:67 - Deleted file: ../outputs/result/result_qs_N_1000.json
+2024-05-09 00:42:26.892 | INFO     | dataProcessor:copy_files_to_useful:104 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_00-42-26.json
+2024-05-09 00:42:26.892 | INFO     | dataProcessor:copy_files_to_useful:104 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_00-42-26.json
+2024-05-09 00:42:26.893 | INFO     | dataProcessor:copy_files_to_useful:104 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_00-42-26.csv
+2024-05-09 00:42:26.893 | INFO     | dataProcessor:copy_files_to_useful:104 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_00-42-26.csv
+2024-05-09 00:42:26.893 | ERROR    | dataProcessor:copy_files_to_useful:106 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_00-42-26: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:42:26.893 | ERROR    | dataProcessor:copy_files_to_useful:106 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_00-42-26: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:42:26.893 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:45:45.236 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:45:45.237 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 1000,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:45:45.237 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1000, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:45:45.237 | INFO     | modifier:generate_array:67 - generated array is:[1000, 100000]
+2024-05-09 00:45:45.238 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:45:45.238 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:45:45.238 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fcb66ea6df0>}
+2024-05-09 00:45:45.238 | INFO     | runner:run:34 - running 0
+2024-05-09 00:45:45.238 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:45:45.238 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:45:45.238 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:45:48.633 | INFO     | runner:run:34 - running 1
+2024-05-09 00:45:48.634 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:45:48.635 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:45:48.635 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:45:55.943 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:45:55.945 | INFO     | dataProcessor:integrate_results:57 - Found files with 'iv' in their names.
+2024-05-09 00:45:55.946 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:45:55.946 | INFO     | dataProcessor:integrate_results:61 - Found files with 'qs' in their names.
+2024-05-09 00:45:55.947 | INFO     | dataProcessor:integrate_results:63 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:45:55.954 | INFO     | dataProcessor:json2df:81 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:45:55.959 | INFO     | dataProcessor:json2df:85 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:46:45.118 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:46:45.119 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 1000,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:46:45.119 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1000, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:46:45.119 | INFO     | modifier:generate_array:67 - generated array is:[1000, 100000]
+2024-05-09 00:46:45.119 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:46:45.119 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:46:45.119 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fd1924c5df0>}
+2024-05-09 00:46:45.120 | INFO     | runner:run:34 - running 0
+2024-05-09 00:46:45.120 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:46:45.120 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:46:45.120 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:46:52.731 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:46:52.731 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 10000,
+        "end": 1000000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:46:52.732 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 100, 'mode': 'log', 'end': 1000000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:46:52.732 | INFO     | modifier:generate_array:67 - generated array is:[10000, 1000000]
+2024-05-09 00:46:52.732 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:46:52.732 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:46:52.732 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f3696fc1460>}
+2024-05-09 00:46:52.732 | INFO     | runner:run:34 - running 0
+2024-05-09 00:46:52.732 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:46:52.733 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:46:52.733 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:46:56.457 | INFO     | runner:run:34 - running 1
+2024-05-09 00:46:56.458 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:46:56.459 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:46:56.459 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:47:43.232 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:47:43.233 | INFO     | dataProcessor:integrate_results:57 - Found files with 'iv' in their names.
+2024-05-09 00:47:43.234 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:47:43.234 | INFO     | dataProcessor:integrate_results:61 - Found files with 'qs' in their names.
+2024-05-09 00:47:43.235 | INFO     | dataProcessor:integrate_results:63 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:47:43.242 | INFO     | dataProcessor:json2df:81 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:47:43.246 | INFO     | dataProcessor:json2df:85 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:47:43.247 | WARNING  | dataProcessor:load_data:46 - FINAL RESULT: No files with 'iv' in their names.
+2024-05-09 00:47:43.247 | WARNING  | dataProcessor:load_data:52 - FINAL RESULT: No files with 'qs' in their names.
+2024-05-09 00:47:43.248 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_100000.json
+2024-05-09 00:47:43.248 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:47:43.249 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:47:43.249 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_1000000.json
+2024-05-09 00:47:43.249 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_1000000.json
+2024-05-09 00:47:43.249 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_1000.json
+2024-05-09 00:47:43.249 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_1000.json
+2024-05-09 00:47:43.250 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_100000.json
+2024-05-09 00:47:43.250 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_00-47-43.json
+2024-05-09 00:47:43.251 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_00-47-43.json
+2024-05-09 00:47:43.251 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_00-47-43.csv
+2024-05-09 00:47:43.252 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_00-47-43.csv
+2024-05-09 00:47:43.252 | ERROR    | dataProcessor:copy_files_to_useful:111 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_00-47-43: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:47:43.252 | ERROR    | dataProcessor:copy_files_to_useful:111 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_00-47-43: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:47:43.252 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:50:54.520 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:50:54.521 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 100,
+        "end": 10000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:50:54.522 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 100, 'mode': 'log', 'end': 10000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:50:54.522 | INFO     | modifier:generate_array:67 - generated array is:[100, 10000]
+2024-05-09 00:50:54.522 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:50:54.522 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:50:54.522 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7ff59a251df0>}
+2024-05-09 00:50:54.522 | INFO     | runner:run:34 - running 0
+2024-05-09 00:50:54.522 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:50:54.524 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:50:54.524 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:50:57.822 | INFO     | runner:run:34 - running 1
+2024-05-09 00:50:57.823 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:50:57.824 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:50:57.824 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:51:01.106 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:51:01.107 | INFO     | dataProcessor:integrate_results:57 - Found files with 'iv' in their names.
+2024-05-09 00:51:01.107 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:51:01.108 | INFO     | dataProcessor:integrate_results:61 - Found files with 'qs' in their names.
+2024-05-09 00:51:01.108 | INFO     | dataProcessor:integrate_results:63 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:51:01.123 | INFO     | dataProcessor:json2df:81 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:51:01.126 | INFO     | dataProcessor:json2df:85 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:51:01.127 | WARNING  | dataProcessor:load_data:46 - FINAL RESULT: No files with 'iv' in their names.
+2024-05-09 00:51:01.127 | WARNING  | dataProcessor:load_data:52 - FINAL RESULT: No files with 'qs' in their names.
+2024-05-09 00:51:01.127 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_100.json
+2024-05-09 00:51:01.127 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_100.json
+2024-05-09 00:51:01.127 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:51:01.128 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:51:01.129 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_00-51-01.json
+2024-05-09 00:51:01.129 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_00-51-01.json
+2024-05-09 00:51:01.130 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_00-51-01.csv
+2024-05-09 00:51:01.130 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_00-51-01.csv
+2024-05-09 00:51:01.130 | ERROR    | dataProcessor:copy_files_to_useful:111 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_00-51-01: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:51:01.131 | ERROR    | dataProcessor:copy_files_to_useful:111 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_00-51-01: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:51:01.131 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:53:22.604 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:53:22.604 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 100,
+        "end": 10000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:53:22.605 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 100, 'mode': 'log', 'end': 10000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:53:22.605 | INFO     | modifier:generate_array:67 - generated array is:[100, 10000]
+2024-05-09 00:53:22.605 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:53:22.605 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:53:22.605 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f8ae3998df0>}
+2024-05-09 00:53:22.605 | INFO     | runner:run:34 - running 0
+2024-05-09 00:53:22.605 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:53:22.606 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:53:22.606 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:53:26.075 | INFO     | runner:run:34 - running 1
+2024-05-09 00:53:26.076 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:53:26.076 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:53:26.076 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:53:29.749 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:53:29.750 | INFO     | dataProcessor:integrate_results:57 - Found files with 'iv' in their names.
+2024-05-09 00:53:29.751 | INFO     | dataProcessor:integrate_results:59 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:53:29.751 | INFO     | dataProcessor:integrate_results:61 - Found files with 'qs' in their names.
+2024-05-09 00:53:29.752 | INFO     | dataProcessor:integrate_results:63 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:53:29.758 | INFO     | dataProcessor:json2df:81 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:53:29.760 | INFO     | dataProcessor:json2df:85 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:53:29.763 | INFO     | dataProcessor:load_data:43 -    values  compile_time  compile_memory  simulate_time  simulate_memory
+0     100          0.00            4380           0.00             4476
+1   10000          0.01            4376           0.01             4476
+2024-05-09 00:53:29.799 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_100.json
+2024-05-09 00:53:29.799 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_100.json
+2024-05-09 00:53:29.800 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:53:29.800 | INFO     | dataProcessor:clear_results:72 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:53:29.801 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_00-53-29.json
+2024-05-09 00:53:29.802 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_00-53-29.json
+2024-05-09 00:53:29.802 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_00-53-29.csv
+2024-05-09 00:53:29.803 | INFO     | dataProcessor:copy_files_to_useful:109 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_00-53-29.csv
+2024-05-09 00:53:29.803 | ERROR    | dataProcessor:copy_files_to_useful:111 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_00-53-29: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:53:29.803 | ERROR    | dataProcessor:copy_files_to_useful:111 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_00-53-29: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:53:29.803 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:55:49.928 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:55:49.929 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 100,
+        "end": 10000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:55:49.929 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 100, 'mode': 'log', 'end': 10000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:55:49.929 | INFO     | modifier:generate_array:67 - generated array is:[100, 10000]
+2024-05-09 00:55:49.929 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:55:49.929 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:55:49.929 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f0a708ecdf0>}
+2024-05-09 00:55:49.929 | INFO     | runner:run:34 - running 0
+2024-05-09 00:55:49.929 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:55:49.930 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:55:49.930 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:55:53.003 | INFO     | runner:run:34 - running 1
+2024-05-09 00:55:53.004 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:55:53.004 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:55:53.004 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:55:56.360 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:55:56.362 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 00:55:56.362 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:55:56.363 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 00:55:56.363 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:55:56.369 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:55:56.373 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:56:55.394 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:56:55.395 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 16,
+        "start": 100,
+        "end": 10000,
+        "step": 100,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:56:55.395 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 100, 'mode': 'log', 'end': 10000, 'amount': 16, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-09 00:56:55.395 | INFO     | modifier:generate_array:67 - generated array is:[100, 10000]
+2024-05-09 00:56:55.395 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 00:56:55.395 | INFO     | modifier:check_subject:49 - subject is:N
+2024-05-09 00:56:55.395 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7ff7e6b96df0>}
+2024-05-09 00:56:55.395 | INFO     | runner:run:34 - running 0
+2024-05-09 00:56:55.395 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 00:56:55.396 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:56:55.396 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:56:58.455 | INFO     | runner:run:34 - running 1
+2024-05-09 00:56:58.455 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 00:56:58.456 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:56:58.456 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 00:57:01.751 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 00:57:01.752 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 00:57:01.752 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_N.json
+2024-05-09 00:57:01.753 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 00:57:01.753 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_N.json
+2024-05-09 00:57:01.760 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 00:57:01.764 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 00:57:01.772 | INFO     | dataProcessor:load_data:43 - 
+The dataframe of IVerilog is following:
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0     100          0.00            4384            0.0             4472
+1   10000          0.01            4376            0.0             4472
+2024-05-09 00:57:01.779 | INFO     | dataProcessor:load_data:48 - 
+The dataframe of Questasim is following: 
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0     100          0.02           21840            0.0            31308
+1   10000          0.03           21848            0.0            79924
+2024-05-09 00:57:01.780 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_N_100.json
+2024-05-09 00:57:01.780 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_N_100.json
+2024-05-09 00:57:01.780 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_N_10000.json
+2024-05-09 00:57:01.781 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_N_10000.json
+2024-05-09 00:57:01.781 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_00-57-01.json
+2024-05-09 00:57:01.782 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_00-57-01.json
+2024-05-09 00:57:01.782 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_00-57-01.csv
+2024-05-09 00:57:01.782 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_00-57-01.csv
+2024-05-09 00:57:01.783 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_00-57-01: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 00:57:01.783 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_00-57-01: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 00:57:01.783 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 00:59:17.232 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 00:59:17.232 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 1024,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 00:59:17.232 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 1024, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 00:59:17.232 | INFO     | modifier:generate_array:67 - generated array is:[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+2024-05-09 00:59:17.233 | INFO     | modifier:generate_array:69 - index is:10
+2024-05-09 00:59:17.233 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 00:59:17.233 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fcddd721460>}
+2024-05-09 00:59:17.233 | INFO     | runner:run:34 - running 0
+2024-05-09 00:59:17.233 | INFO     | modifier:modify:72 - Modifying index is:10
+2024-05-09 00:59:17.233 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 00:59:17.233 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:00:03.724 | INFO     | runner:run:34 - running 1
+2024-05-09 01:00:03.725 | INFO     | modifier:modify:72 - Modifying index is:9
+2024-05-09 01:00:03.725 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:00:03.726 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:00:50.475 | INFO     | runner:run:34 - running 2
+2024-05-09 01:00:50.475 | INFO     | modifier:modify:72 - Modifying index is:8
+2024-05-09 01:00:50.476 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:00:50.476 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:01:36.689 | INFO     | runner:run:34 - running 3
+2024-05-09 01:01:36.690 | INFO     | modifier:modify:72 - Modifying index is:7
+2024-05-09 01:01:36.691 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:01:36.691 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:02:22.880 | INFO     | runner:run:34 - running 4
+2024-05-09 01:02:22.881 | INFO     | modifier:modify:72 - Modifying index is:6
+2024-05-09 01:02:22.881 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:02:22.881 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:03:10.071 | INFO     | runner:run:34 - running 5
+2024-05-09 01:03:10.072 | INFO     | modifier:modify:72 - Modifying index is:5
+2024-05-09 01:03:10.073 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:03:10.073 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:03:58.480 | INFO     | runner:run:34 - running 6
+2024-05-09 01:03:58.480 | INFO     | modifier:modify:72 - Modifying index is:4
+2024-05-09 01:03:58.481 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:03:58.481 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:04:50.658 | INFO     | runner:run:34 - running 7
+2024-05-09 01:04:50.659 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 01:04:50.660 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:04:50.660 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:05:46.278 | INFO     | runner:run:34 - running 8
+2024-05-09 01:05:46.279 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 01:05:46.279 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:05:46.279 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:06:46.396 | INFO     | runner:run:34 - running 9
+2024-05-09 01:06:46.396 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 01:06:46.396 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:06:46.397 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:07:58.149 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 01:07:58.150 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 01:07:58.151 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-09 01:07:58.151 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 01:07:58.152 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-09 01:07:58.158 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 01:07:58.160 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 01:07:58.167 | INFO     | dataProcessor:load_data:43 - 
+The dataframe of IVerilog is following:
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.03           34120           0.16             4396
+1       4          0.05           34120           0.20             4400
+2       8          0.03           34344           0.28             4424
+3      16          0.03           34352           0.43             4476
+4      32          0.03           34604           0.66             4576
+5      64          0.04           34868           1.38             4784
+6     128          0.04           35512           2.86             5244
+7     256          0.10           36944           5.67             6188
+8     512          0.11           39792          11.32             8056
+9    1024          0.16           45504          22.54            11652
+2024-05-09 01:07:58.174 | INFO     | dataProcessor:load_data:48 - 
+The dataframe of Questasim is following: 
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.02           23800           22.0          5594052
+1       4          0.03           21852           22.0          5594088
+2       8          0.03           21844           22.0          5594164
+3      16          0.02           21852           21.0          5594312
+4      32          0.02           21848           21.0          5594736
+5      64          0.04           21844           22.0          5595392
+6     128          0.03           21840           25.0          5597140
+7     256          0.03           23820           23.0          5600256
+8     512          0.03           21852           22.0          5606880
+9    1024          0.03           23888           22.0          5619992
+2024-05-09 01:07:58.175 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_4.json
+2024-05-09 01:07:58.175 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_8.json
+2024-05-09 01:07:58.176 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_8.json
+2024-05-09 01:07:58.176 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_16.json
+2024-05-09 01:07:58.176 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_16.json
+2024-05-09 01:07:58.176 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_32.json
+2024-05-09 01:07:58.176 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_32.json
+2024-05-09 01:07:58.176 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_64.json
+2024-05-09 01:07:58.177 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_64.json
+2024-05-09 01:07:58.177 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_128.json
+2024-05-09 01:07:58.177 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_128.json
+2024-05-09 01:07:58.177 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_256.json
+2024-05-09 01:07:58.177 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_256.json
+2024-05-09 01:07:58.177 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_512.json
+2024-05-09 01:07:58.178 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_512.json
+2024-05-09 01:07:58.178 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_1024.json
+2024-05-09 01:07:58.178 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_2.json
+2024-05-09 01:07:58.178 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_2.json
+2024-05-09 01:07:58.178 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_4.json
+2024-05-09 01:07:58.178 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_1024.json
+2024-05-09 01:07:58.179 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_01-07-58.json
+2024-05-09 01:07:58.179 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_01-07-58.json
+2024-05-09 01:07:58.179 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_01-07-58.csv
+2024-05-09 01:07:58.180 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_01-07-58.csv
+2024-05-09 01:07:58.180 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount_2024-05-09_01-07-58.json
+2024-05-09 01:07:58.180 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_01-07-58: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 01:07:58.182 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_01-07-58: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 01:07:58.182 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount_2024-05-09_01-07-58.json
+2024-05-09 01:07:58.182 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 01:10:23.561 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 01:10:23.562 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 8,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 01:10:23.562 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 8, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 01:10:23.562 | INFO     | modifier:generate_array:67 - generated array is:[2, 4, 8]
+2024-05-09 01:10:23.562 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 01:10:23.562 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 01:10:23.562 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f166b6b0460>}
+2024-05-09 01:10:23.563 | INFO     | runner:run:34 - running 0
+2024-05-09 01:10:23.563 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 01:10:23.563 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:10:23.563 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:11:10.273 | INFO     | runner:run:34 - running 1
+2024-05-09 01:11:10.273 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 01:11:10.274 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:11:10.274 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:11:56.795 | INFO     | runner:run:34 - running 2
+2024-05-09 01:11:56.796 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 01:11:56.796 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:11:56.796 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:12:47.697 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 01:12:47.698 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 8,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 01:12:47.698 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 8, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 01:12:47.698 | INFO     | modifier:generate_array:67 - generated array is:[2, 4, 8]
+2024-05-09 01:12:47.698 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 01:12:47.698 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 01:12:47.698 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f8740251460>}
+2024-05-09 01:12:47.698 | INFO     | runner:run:34 - running 0
+2024-05-09 01:12:47.698 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 01:12:47.699 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:12:47.699 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:13:16.108 | INFO     | runner:run:34 - running 1
+2024-05-09 01:13:16.109 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 01:13:16.110 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:13:16.110 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:13:37.985 | INFO     | runner:run:34 - running 2
+2024-05-09 01:13:37.986 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 01:13:37.986 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:13:37.986 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:14:04.812 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 01:14:04.813 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 01:14:04.814 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-09 01:14:04.815 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 01:14:04.816 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-09 01:14:04.821 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 01:14:04.822 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 01:14:04.831 | INFO     | dataProcessor:load_data:43 - 
+The dataframe of IVerilog is following:
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.03           34116           0.15             4392
+1       4          0.03           34244           0.18             4400
+2       8          0.04           34344           0.24             4428
+2024-05-09 01:14:04.839 | INFO     | dataProcessor:load_data:48 - 
+The dataframe of Questasim is following: 
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.03           21856           27.0          5595084
+1       4          0.02           21852           20.0          5593964
+2       8          0.03           21852           25.0          5594040
+2024-05-09 01:14:04.840 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_4.json
+2024-05-09 01:14:04.840 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_8.json
+2024-05-09 01:14:04.841 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_2.json
+2024-05-09 01:14:04.841 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_2.json
+2024-05-09 01:14:04.841 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_4.json
+2024-05-09 01:14:04.841 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_8.json
+2024-05-09 01:14:04.842 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_01-14-04.json
+2024-05-09 01:14:04.842 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_01-14-04.json
+2024-05-09 01:14:04.842 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_01-14-04.csv
+2024-05-09 01:14:04.843 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_01-14-04.csv
+2024-05-09 01:14:04.843 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount_2024-05-09_01-14-04.json
+2024-05-09 01:14:04.843 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_01-14-04: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 01:14:04.844 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_01-14-04: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 01:14:04.844 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount_2024-05-09_01-14-04.json
+2024-05-09 01:14:04.844 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 01:15:48.442 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 01:15:48.442 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 8,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 01:15:48.443 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 8, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 01:15:48.443 | INFO     | modifier:generate_array:67 - generated array is:[2, 4, 8]
+2024-05-09 01:15:48.443 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 01:15:48.443 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 01:15:48.443 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f4505422460>}
+2024-05-09 01:15:48.443 | INFO     | runner:run:34 - running 0
+2024-05-09 01:15:48.443 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 01:15:48.444 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:15:48.444 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:16:15.726 | INFO     | runner:run:34 - running 1
+2024-05-09 01:16:15.726 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 01:16:15.727 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:16:15.727 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:16:37.868 | INFO     | runner:run:34 - running 2
+2024-05-09 01:16:37.869 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 01:16:37.869 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:16:37.869 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:16:59.095 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 01:16:59.096 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 01:16:59.097 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-09 01:16:59.097 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 01:16:59.098 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-09 01:16:59.102 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 01:16:59.104 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 01:16:59.112 | INFO     | dataProcessor:load_data:43 - 
+The dataframe of IVerilog is following:
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.02           34116           0.15             4392
+1       4          0.05           34120           0.20             4400
+2       8          0.04           34344           0.25             4424
+2024-05-09 01:16:59.118 | INFO     | dataProcessor:load_data:48 - 
+The dataframe of Questasim is following: 
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.02           21848           26.0          5593928
+1       4          0.02           21844           20.0          5593964
+2       8          0.02           21840           19.0          5595084
+2024-05-09 01:16:59.119 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_4.json
+2024-05-09 01:16:59.119 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_8.json
+2024-05-09 01:16:59.120 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_2.json
+2024-05-09 01:16:59.120 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_2.json
+2024-05-09 01:16:59.120 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_4.json
+2024-05-09 01:16:59.120 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_8.json
+2024-05-09 01:16:59.121 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_01-16-59.json
+2024-05-09 01:16:59.121 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_01-16-59.json
+2024-05-09 01:16:59.121 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_01-16-59.csv
+2024-05-09 01:16:59.122 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_01-16-59.csv
+2024-05-09 01:16:59.122 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount_2024-05-09_01-16-59.json
+2024-05-09 01:16:59.123 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_01-16-59: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 01:16:59.123 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_01-16-59: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 01:16:59.124 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount_2024-05-09_01-16-59.json
+2024-05-09 01:16:59.124 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 01:18:32.461 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 01:18:32.461 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 8,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 01:18:32.461 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 8, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 01:18:32.462 | INFO     | modifier:generate_array:67 - generated array is:[2, 4, 8]
+2024-05-09 01:18:32.462 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 01:18:32.462 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 01:18:32.462 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f17453af460>}
+2024-05-09 01:18:32.462 | INFO     | runner:run:34 - running 0
+2024-05-09 01:18:32.462 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 01:18:32.462 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:18:32.462 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:18:54.533 | INFO     | runner:run:34 - running 1
+2024-05-09 01:18:54.534 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 01:18:54.534 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:18:54.534 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:19:15.753 | INFO     | runner:run:34 - running 2
+2024-05-09 01:19:15.754 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 01:19:15.754 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:19:15.754 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:19:43.249 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 01:19:43.250 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 01:19:43.251 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-09 01:19:43.251 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 01:19:43.252 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-09 01:19:43.258 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 01:19:43.262 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 01:19:43.273 | INFO     | dataProcessor:load_data:43 - 
+The dataframe of IVerilog is following:
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.03           34120           0.16             4396
+1       4          0.03           34120           0.18             4400
+2       8          0.03           34344           0.25             4424
+2024-05-09 01:19:43.279 | INFO     | dataProcessor:load_data:48 - 
+The dataframe of Questasim is following: 
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.03           21848           21.0          5593928
+1       4          0.03           21848           20.0          5593964
+2       8          0.03           21840           22.0          5594040
+2024-05-09 01:19:43.280 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_4.json
+2024-05-09 01:19:43.280 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_8.json
+2024-05-09 01:19:43.280 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_2.json
+2024-05-09 01:19:43.281 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_2.json
+2024-05-09 01:19:43.281 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_4.json
+2024-05-09 01:19:43.281 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_8.json
+2024-05-09 01:19:43.281 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_01-19-43.json
+2024-05-09 01:19:43.282 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_01-19-43.json
+2024-05-09 01:19:43.282 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_01-19-43.csv
+2024-05-09 01:19:43.282 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_01-19-43.csv
+2024-05-09 01:19:43.283 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount_2024-05-09_01-19-43.json
+2024-05-09 01:19:43.283 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_01-19-43: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 01:19:43.283 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_01-19-43: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 01:19:43.284 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount_2024-05-09_01-19-43.json
+2024-05-09 01:19:43.284 | INFO     | __main__:main:30 - ---------------END------------------
+2024-05-09 01:20:48.235 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 01:20:48.235 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 8,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 01:20:48.235 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 8, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 01:20:48.235 | INFO     | modifier:generate_array:67 - generated array is:[2, 4, 8]
+2024-05-09 01:20:48.236 | INFO     | modifier:generate_array:69 - index is:3
+2024-05-09 01:20:48.236 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 01:20:48.236 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f670aabc460>}
+2024-05-09 01:20:48.236 | INFO     | runner:run:34 - running 0
+2024-05-09 01:20:48.236 | INFO     | modifier:modify:72 - Modifying index is:3
+2024-05-09 01:20:48.236 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:20:48.236 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:21:10.411 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-09 01:21:10.411 | INFO     | tester:__init__:25 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 2,
+        "end": 4,
+        "step": 2,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-09 01:21:10.411 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 2, 'step': 2, 'mode': 'log', 'end': 4, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-09 01:21:10.411 | INFO     | modifier:generate_array:67 - generated array is:[2, 4]
+2024-05-09 01:21:10.411 | INFO     | modifier:generate_array:69 - index is:2
+2024-05-09 01:21:10.412 | INFO     | modifier:check_subject:49 - subject is:amount
+2024-05-09 01:21:10.412 | INFO     | runner:__init__:14 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fdfc5d78460>}
+2024-05-09 01:21:10.412 | INFO     | runner:run:34 - running 0
+2024-05-09 01:21:10.412 | INFO     | modifier:modify:72 - Modifying index is:2
+2024-05-09 01:21:10.412 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:21:10.412 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:21:35.643 | INFO     | runner:run:34 - running 1
+2024-05-09 01:21:35.644 | INFO     | modifier:modify:72 - Modifying index is:1
+2024-05-09 01:21:35.645 | INFO     | modifier:load_prototype:125 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-09 01:21:35.645 | INFO     | modifier:load_prototype:127 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-09 01:21:59.526 | INFO     | dataProcessor:__init__:28 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-09 01:21:59.527 | INFO     | dataProcessor:integrate_results:55 - Found files with 'iv' in their names.
+2024-05-09 01:21:59.528 | INFO     | dataProcessor:integrate_results:57 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-09 01:21:59.528 | INFO     | dataProcessor:integrate_results:59 - Found files with 'qs' in their names.
+2024-05-09 01:21:59.529 | INFO     | dataProcessor:integrate_results:61 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-09 01:21:59.534 | INFO     | dataProcessor:json2df:79 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-09 01:21:59.537 | INFO     | dataProcessor:json2df:83 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-09 01:21:59.544 | INFO     | dataProcessor:load_data:43 - 
+The dataframe of IVerilog is following:
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.03           34116           0.14             4392
+1       4          0.03           34248           0.20             4400
+2024-05-09 01:21:59.550 | INFO     | dataProcessor:load_data:48 - 
+The dataframe of Questasim is following: 
+   values  compile_time  compile_memory  simulate_time  simulate_memory
+0       2          0.02           21844           24.0          5593916
+1       4          0.03           21848           22.0          5593964
+2024-05-09 01:21:59.550 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_4.json
+2024-05-09 01:21:59.550 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_2.json
+2024-05-09 01:21:59.550 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_qs_amount_2.json
+2024-05-09 01:21:59.551 | INFO     | dataProcessor:clear_results:70 - Deleted file: ../outputs/result/result_iv_amount_4.json
+2024-05-09 01:21:59.552 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_N.json to ../outputs/result/useful/integrated_results_iv_N_2024-05-09_01-21-59.json
+2024-05-09 01:21:59.552 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_N.json to ../outputs/result/useful/integrated_results_qs_N_2024-05-09_01-21-59.json
+2024-05-09 01:21:59.553 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_iv.csv to ../outputs/result/useful/final_result_iv_2024-05-09_01-21-59.csv
+2024-05-09 01:21:59.553 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/final_result_qs.csv to ../outputs/result/useful/final_result_qs_2024-05-09_01-21-59.csv
+2024-05-09 01:21:59.553 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_iv_amount.json to ../outputs/result/useful/integrated_results_iv_amount_2024-05-09_01-21-59.json
+2024-05-09 01:21:59.554 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useful to ../outputs/result/useful/useful_2024-05-09_01-21-59: [Errno 21] Is a directory: '../outputs/result/useful'
+2024-05-09 01:21:59.554 | ERROR    | dataProcessor:copy_files_to_useful:109 - Error copying file ../outputs/result/useless to ../outputs/result/useful/useless_2024-05-09_01-21-59: [Errno 21] Is a directory: '../outputs/result/useless'
+2024-05-09 01:21:59.555 | INFO     | dataProcessor:copy_files_to_useful:107 - Copied file: ../outputs/result/integrated_results_qs_amount.json to ../outputs/result/useful/integrated_results_qs_amount_2024-05-09_01-21-59.json
+2024-05-09 01:21:59.555 | INFO     | __main__:main:30 - ---------------END------------------

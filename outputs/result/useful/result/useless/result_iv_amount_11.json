@@ -1,0 +1,11 @@
+{
+  "info": {
+    "simulator": "iv",
+    "subject": "amount",
+    "value": "11"
+  },
+  "compile_time": "0:00.00",
+  "compile_memory": "2824",
+  "simulate_time": "0:00.02",
+  "simulate_memory": "4400"
+}

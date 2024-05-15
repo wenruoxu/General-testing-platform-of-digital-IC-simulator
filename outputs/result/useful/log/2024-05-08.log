@@ -1,0 +1,1324 @@
+2024-05-08 09:32:40.090 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 09:32:40.090 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 10000000,
+        "amount": -1,
+        "start": 1,
+        "end": 100,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all/iv/qs"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 09:32:40.091 | INFO     | modifier:__init__:34 - 
+configuration of Modifier class:{'verilog_testbench': None, 'verilog_module': None, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'amount': -1, 'start': 1, 'step': 10, 'mode': 'linear', 'end': 100, 'BW': 32, 'N': 10000000, 'array': [], 'index': 0}
+2024-05-08 09:32:40.091 | INFO     | modifier:generate_array:54 - generated array is:[1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
+2024-05-08 09:32:40.091 | INFO     | modifier:generate_array:56 - index is:10
+2024-05-08 09:32:40.091 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all/iv/qs', 'modifier': <modifier.Modifier object at 0x7fb096fbaaf0>}
+2024-05-08 15:49:10.759 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 15:49:10.761 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 10000000,
+        "amount": -1,
+        "start": 1,
+        "end": 100,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all/iv/qs"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 15:49:10.762 | INFO     | modifier:__init__:34 - 
+configuration of Modifier class:{'verilog_testbench': None, 'verilog_module': None, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'amount': -1, 'start': 1, 'step': 10, 'mode': 'linear', 'end': 100, 'BW': 32, 'N': 10000000, 'array': [], 'index': 0}
+2024-05-08 15:49:10.762 | INFO     | modifier:generate_array:54 - generated array is:[1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
+2024-05-08 15:49:10.762 | INFO     | modifier:generate_array:56 - index is:10
+2024-05-08 15:49:10.762 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all/iv/qs', 'modifier': <modifier.Modifier object at 0x7f65c3ce93d0>}
+2024-05-08 18:14:54.995 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:14:54.996 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 100,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:14:54.996 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:14:54.996 | INFO     | modifier:generate_array:66 - generated array is:[100, 1000, 10000]
+2024-05-08 18:14:54.996 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:14:54.996 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f2c8a6e75e0>}
+2024-05-08 18:14:54.996 | INFO     | runner:run:32 - running 0
+2024-05-08 18:14:54.997 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:14:54.997 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:14:54.997 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:14:58.192 | INFO     | runner:run:32 - running 1
+2024-05-08 18:14:58.193 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:14:58.193 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:14:58.193 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:15:01.179 | INFO     | runner:run:32 - running 2
+2024-05-08 18:15:01.180 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:15:01.181 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:15:01.181 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:15:04.463 | INFO     | dataProcessor:__init__:12 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 18:15:34.766 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:15:34.767 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 100,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:15:34.767 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:15:34.767 | INFO     | modifier:generate_array:66 - generated array is:[100, 1000, 10000]
+2024-05-08 18:15:34.767 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:15:34.767 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f6f1c87e3a0>}
+2024-05-08 18:15:34.767 | INFO     | runner:run:32 - running 0
+2024-05-08 18:15:34.767 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:15:34.768 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:15:34.768 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:15:37.829 | INFO     | runner:run:32 - running 1
+2024-05-08 18:15:37.830 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:15:37.830 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:15:37.830 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:15:44.793 | INFO     | runner:run:32 - running 2
+2024-05-08 18:15:44.794 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:15:44.795 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:15:44.795 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:15:48.352 | INFO     | dataProcessor:__init__:12 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 18:17:10.133 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:17:10.133 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 100,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:17:10.134 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:17:10.134 | INFO     | modifier:generate_array:66 - generated array is:[100, 1000, 10000]
+2024-05-08 18:17:10.134 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:17:10.134 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f6efae293a0>}
+2024-05-08 18:17:10.134 | INFO     | runner:run:32 - running 0
+2024-05-08 18:17:10.134 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:17:10.134 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:17:10.134 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:17:13.136 | INFO     | runner:run:32 - running 1
+2024-05-08 18:17:13.136 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:17:13.137 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:17:13.137 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:17:16.196 | INFO     | runner:run:32 - running 2
+2024-05-08 18:17:16.196 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:17:16.197 | INFO     | modifier:load_prototype:129 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:17:16.197 | INFO     | modifier:load_prototype:131 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:17:19.552 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:19:16.439 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:19:16.439 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 100,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:19:16.440 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:19:16.440 | INFO     | modifier:generate_array:66 - generated array is:[100, 1000, 10000]
+2024-05-08 18:19:16.440 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:19:16.440 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f2a2fecb280>}
+2024-05-08 18:19:16.440 | INFO     | runner:run:32 - running 0
+2024-05-08 18:19:16.440 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:19:16.440 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:19:16.440 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:19:19.685 | INFO     | runner:run:32 - running 1
+2024-05-08 18:19:19.686 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:19:19.687 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:19:19.688 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:19:22.974 | INFO     | runner:run:32 - running 2
+2024-05-08 18:19:22.974 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:19:22.975 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:19:22.975 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:19:26.291 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:22:11.440 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:22:11.440 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 100,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:22:11.440 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 100, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:22:11.440 | INFO     | modifier:generate_array:66 - generated array is:[100, 1000, 10000]
+2024-05-08 18:22:11.440 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:22:11.441 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f98a2b1b3a0>}
+2024-05-08 18:22:11.441 | INFO     | runner:run:32 - running 0
+2024-05-08 18:22:11.441 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:22:11.441 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:22:11.441 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:22:14.459 | INFO     | runner:run:32 - running 1
+2024-05-08 18:22:14.460 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:22:14.460 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:22:14.460 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:22:17.415 | INFO     | runner:run:32 - running 2
+2024-05-08 18:22:17.415 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:22:17.415 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:22:17.415 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:22:20.671 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:25:54.874 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:25:54.874 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:25:54.874 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:25:54.874 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:25:54.874 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:25:54.875 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f09206503a0>}
+2024-05-08 18:25:54.875 | INFO     | runner:run:32 - running 0
+2024-05-08 18:25:54.875 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:25:54.875 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:25:54.875 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:25:58.223 | INFO     | runner:run:32 - running 1
+2024-05-08 18:25:58.223 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:25:58.223 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:25:58.223 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:26:05.215 | INFO     | runner:run:32 - running 2
+2024-05-08 18:26:05.216 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:26:05.216 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:26:05.216 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:27:18.519 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:29:01.676 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:29:01.676 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:29:01.676 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:29:01.677 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:29:01.677 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:29:01.677 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f029140c3a0>}
+2024-05-08 18:29:01.677 | INFO     | runner:run:32 - running 0
+2024-05-08 18:29:01.677 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:29:01.677 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:29:01.677 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:29:05.164 | INFO     | runner:run:32 - running 1
+2024-05-08 18:29:05.165 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:29:05.165 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:29:05.165 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:29:16.552 | INFO     | runner:run:32 - running 2
+2024-05-08 18:29:16.553 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:29:16.553 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:29:16.553 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:30:00.527 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:31:28.008 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:31:28.009 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:31:28.009 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:31:28.009 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:31:28.009 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:31:28.009 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fd96acf93a0>}
+2024-05-08 18:31:28.009 | INFO     | runner:run:32 - running 0
+2024-05-08 18:31:28.010 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:31:28.010 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:31:28.010 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:31:31.185 | INFO     | runner:run:32 - running 1
+2024-05-08 18:31:31.186 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:31:31.186 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:31:31.187 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:31:34.238 | INFO     | runner:run:32 - running 2
+2024-05-08 18:31:34.238 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:31:34.239 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:31:34.239 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:31:37.276 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:32:12.133 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:32:12.134 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:32:12.134 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:32:12.134 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:32:12.134 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:32:12.134 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7ff1d9f023a0>}
+2024-05-08 18:32:12.134 | INFO     | runner:run:32 - running 0
+2024-05-08 18:32:12.134 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:32:12.134 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:32:12.135 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:32:14.918 | INFO     | runner:run:32 - running 1
+2024-05-08 18:32:14.919 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:32:14.919 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:32:14.919 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:32:17.780 | INFO     | runner:run:32 - running 2
+2024-05-08 18:32:17.781 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:32:17.781 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:32:17.781 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:32:20.637 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:33:21.818 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:33:21.818 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:33:21.818 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:33:21.818 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:33:21.819 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:33:21.819 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fefba0343a0>}
+2024-05-08 18:33:21.819 | INFO     | runner:run:32 - running 0
+2024-05-08 18:33:21.819 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:33:21.819 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:33:21.819 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:33:24.716 | INFO     | runner:run:32 - running 1
+2024-05-08 18:33:24.716 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:33:24.717 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:33:24.717 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:33:31.643 | INFO     | runner:run:32 - running 2
+2024-05-08 18:33:31.644 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:33:31.645 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:33:31.645 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:33:34.757 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:34:49.279 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:34:49.279 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:34:49.279 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:34:49.280 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:34:49.280 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:34:49.280 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fd98bbb85e0>}
+2024-05-08 18:34:49.280 | INFO     | runner:run:32 - running 0
+2024-05-08 18:34:49.280 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:34:49.280 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:34:49.280 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:34:52.195 | INFO     | runner:run:32 - running 1
+2024-05-08 18:34:52.196 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:34:52.196 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:34:52.196 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:34:55.143 | INFO     | runner:run:32 - running 2
+2024-05-08 18:34:55.143 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:34:55.144 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:34:55.144 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:34:58.087 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:38:52.946 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:38:52.946 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": -1,
+        "amount": 5,
+        "start": 10000,
+        "end": 1000000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:38:52.947 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 10000, 'step': 10, 'mode': 'log', 'end': 1000000, 'amount': 5, 'BW': 32, 'N': -1, 'array': [], 'index': 0}
+2024-05-08 18:38:52.947 | INFO     | modifier:generate_array:66 - generated array is:[10000, 100000, 1000000]
+2024-05-08 18:38:52.947 | INFO     | modifier:generate_array:68 - index is:3
+2024-05-08 18:38:52.947 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f0f71ff33a0>}
+2024-05-08 18:38:52.947 | INFO     | runner:run:32 - running 0
+2024-05-08 18:38:52.947 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:38:52.947 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:38:52.947 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:38:55.982 | INFO     | runner:run:32 - running 1
+2024-05-08 18:38:55.983 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:38:55.983 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:38:55.983 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:38:58.982 | INFO     | runner:run:32 - running 2
+2024-05-08 18:38:58.982 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:38:58.983 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:38:58.983 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:39:01.856 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:43:02.014 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:43:02.015 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": -1,
+        "N": 100000,
+        "amount": 5,
+        "start": 1,
+        "end": 10,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:43:02.015 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 10, 'amount': 5, 'BW': -1, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:43:02.015 | INFO     | modifier:generate_array:66 - generated array is:[1]
+2024-05-08 18:43:02.015 | INFO     | modifier:generate_array:68 - index is:1
+2024-05-08 18:43:02.015 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f884779f3a0>}
+2024-05-08 18:43:02.016 | INFO     | runner:run:32 - running 0
+2024-05-08 18:43:02.016 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:43:02.016 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:43:02.016 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:43:05.033 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:44:02.854 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:44:02.854 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": -1,
+        "N": 100000,
+        "amount": 5,
+        "start": 1,
+        "end": 10,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:44:02.854 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 10, 'amount': 5, 'BW': -1, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:44:02.854 | INFO     | modifier:generate_array:66 - generated array is:[1]
+2024-05-08 18:44:02.854 | INFO     | modifier:generate_array:68 - index is:1
+2024-05-08 18:44:02.855 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f4aeffc03a0>}
+2024-05-08 18:44:02.855 | INFO     | runner:run:32 - running 0
+2024-05-08 18:44:02.855 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:44:02.855 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:44:02.855 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:44:05.701 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:44:25.260 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:44:25.261 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": -1,
+        "N": 100000,
+        "amount": 5,
+        "start": 1,
+        "end": 10,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:44:25.261 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 10, 'amount': 5, 'BW': -1, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:44:25.261 | INFO     | modifier:generate_array:66 - generated array is:[1]
+2024-05-08 18:44:25.261 | INFO     | modifier:generate_array:68 - index is:1
+2024-05-08 18:44:25.261 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f8e88c2f3a0>}
+2024-05-08 18:44:25.261 | INFO     | runner:run:32 - running 0
+2024-05-08 18:44:25.261 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:44:25.262 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:44:25.262 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:44:28.125 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:45:30.145 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:45:30.145 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": -1,
+        "N": 100000,
+        "amount": 5,
+        "start": 1,
+        "end": 10,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:45:30.145 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 10, 'amount': 5, 'BW': -1, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:45:30.145 | INFO     | modifier:generate_array:66 - generated array is:[1]
+2024-05-08 18:45:30.145 | INFO     | modifier:generate_array:68 - index is:1
+2024-05-08 18:45:30.145 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f58e409a3a0>}
+2024-05-08 18:45:30.146 | INFO     | runner:run:32 - running 0
+2024-05-08 18:45:30.146 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:45:30.146 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:45:30.146 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:45:33.003 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:46:18.585 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:46:18.585 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": -1,
+        "N": 100000,
+        "amount": 5,
+        "start": 1,
+        "end": 10,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:46:18.586 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 10, 'amount': 5, 'BW': -1, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:46:18.586 | INFO     | modifier:generate_array:66 - generated array is:[1]
+2024-05-08 18:46:18.586 | INFO     | modifier:generate_array:68 - index is:1
+2024-05-08 18:46:18.586 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fdbf86933a0>}
+2024-05-08 18:46:18.586 | INFO     | runner:run:32 - running 0
+2024-05-08 18:46:18.586 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:46:18.587 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:46:18.587 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:46:21.332 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:47:13.368 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:47:13.368 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 100000,
+        "amount": -1,
+        "start": 1,
+        "end": 10,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:47:13.369 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 10, 'amount': -1, 'BW': 32, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:47:13.369 | INFO     | modifier:generate_array:66 - generated array is:[1]
+2024-05-08 18:47:13.369 | INFO     | modifier:generate_array:68 - index is:1
+2024-05-08 18:47:13.369 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f011f8c23a0>}
+2024-05-08 18:47:13.369 | INFO     | runner:run:32 - running 0
+2024-05-08 18:47:13.369 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:47:13.369 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:13.369 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:16.391 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:47:32.003 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:47:32.003 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 100000,
+        "amount": -1,
+        "start": 1,
+        "end": 10,
+        "step": 1,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:47:32.003 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 1, 'mode': 'linear', 'end': 10, 'amount': -1, 'BW': 32, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:47:32.003 | INFO     | modifier:generate_array:66 - generated array is:[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2024-05-08 18:47:32.003 | INFO     | modifier:generate_array:68 - index is:10
+2024-05-08 18:47:32.004 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fc8409cb3a0>}
+2024-05-08 18:47:32.004 | INFO     | runner:run:32 - running 0
+2024-05-08 18:47:32.004 | INFO     | modifier:modify:71 - Modifying index is:10
+2024-05-08 18:47:32.004 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:32.004 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:34.793 | INFO     | runner:run:32 - running 1
+2024-05-08 18:47:34.793 | INFO     | modifier:modify:71 - Modifying index is:9
+2024-05-08 18:47:34.794 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:34.794 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:37.585 | INFO     | runner:run:32 - running 2
+2024-05-08 18:47:37.585 | INFO     | modifier:modify:71 - Modifying index is:8
+2024-05-08 18:47:37.586 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:37.586 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:40.386 | INFO     | runner:run:32 - running 3
+2024-05-08 18:47:40.387 | INFO     | modifier:modify:71 - Modifying index is:7
+2024-05-08 18:47:40.387 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:40.387 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:43.174 | INFO     | runner:run:32 - running 4
+2024-05-08 18:47:43.174 | INFO     | modifier:modify:71 - Modifying index is:6
+2024-05-08 18:47:43.175 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:43.175 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:46.000 | INFO     | runner:run:32 - running 5
+2024-05-08 18:47:46.000 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 18:47:46.001 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:46.001 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:48.853 | INFO     | runner:run:32 - running 6
+2024-05-08 18:47:48.854 | INFO     | modifier:modify:71 - Modifying index is:4
+2024-05-08 18:47:48.854 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:48.855 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:51.721 | INFO     | runner:run:32 - running 7
+2024-05-08 18:47:51.722 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:47:51.722 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:51.722 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:54.597 | INFO     | runner:run:32 - running 8
+2024-05-08 18:47:54.597 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:47:54.598 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:54.598 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:47:57.461 | INFO     | runner:run:32 - running 9
+2024-05-08 18:47:57.462 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:47:57.462 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:47:57.462 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:00.336 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:48:34.349 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:48:34.349 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 100000,
+        "amount": -1,
+        "start": 1,
+        "end": 100,
+        "step": 10,
+        "mode": "linear"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:48:34.349 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'linear', 'end': 100, 'amount': -1, 'BW': 32, 'N': 100000, 'array': [], 'index': 0}
+2024-05-08 18:48:34.349 | INFO     | modifier:generate_array:66 - generated array is:[1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
+2024-05-08 18:48:34.349 | INFO     | modifier:generate_array:68 - index is:10
+2024-05-08 18:48:34.350 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f7e1ca5c3a0>}
+2024-05-08 18:48:34.350 | INFO     | runner:run:32 - running 0
+2024-05-08 18:48:34.350 | INFO     | modifier:modify:71 - Modifying index is:10
+2024-05-08 18:48:34.350 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:34.350 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:37.148 | INFO     | runner:run:32 - running 1
+2024-05-08 18:48:37.149 | INFO     | modifier:modify:71 - Modifying index is:9
+2024-05-08 18:48:37.149 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:37.149 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:39.962 | INFO     | runner:run:32 - running 2
+2024-05-08 18:48:39.963 | INFO     | modifier:modify:71 - Modifying index is:8
+2024-05-08 18:48:39.963 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:39.963 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:42.780 | INFO     | runner:run:32 - running 3
+2024-05-08 18:48:42.781 | INFO     | modifier:modify:71 - Modifying index is:7
+2024-05-08 18:48:42.782 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:42.782 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:45.548 | INFO     | runner:run:32 - running 4
+2024-05-08 18:48:45.549 | INFO     | modifier:modify:71 - Modifying index is:6
+2024-05-08 18:48:45.549 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:45.549 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:48.344 | INFO     | runner:run:32 - running 5
+2024-05-08 18:48:48.344 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 18:48:48.344 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:48.344 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:51.117 | INFO     | runner:run:32 - running 6
+2024-05-08 18:48:51.118 | INFO     | modifier:modify:71 - Modifying index is:4
+2024-05-08 18:48:51.118 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:51.118 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:53.933 | INFO     | runner:run:32 - running 7
+2024-05-08 18:48:53.934 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:48:53.934 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:53.934 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:56.759 | INFO     | runner:run:32 - running 8
+2024-05-08 18:48:56.759 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:48:56.759 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:56.760 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:48:59.605 | INFO     | runner:run:32 - running 9
+2024-05-08 18:48:59.606 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:48:59.606 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:48:59.606 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:49:02.452 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 18:52:26.987 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 18:52:26.988 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 18:52:26.988 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-08 18:52:26.988 | INFO     | modifier:generate_array:66 - generated array is:[1, 10, 100, 1000, 10000]
+2024-05-08 18:52:26.988 | INFO     | modifier:generate_array:68 - index is:5
+2024-05-08 18:52:26.989 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7fd8fc6333a0>}
+2024-05-08 18:52:26.989 | INFO     | runner:run:32 - running 0
+2024-05-08 18:52:26.989 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 18:52:26.989 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:52:26.989 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:52:30.017 | INFO     | runner:run:32 - running 1
+2024-05-08 18:52:30.018 | INFO     | modifier:modify:71 - Modifying index is:4
+2024-05-08 18:52:30.018 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:52:30.018 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:52:33.070 | INFO     | runner:run:32 - running 2
+2024-05-08 18:52:33.071 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 18:52:33.071 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:52:33.071 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:52:36.096 | INFO     | runner:run:32 - running 3
+2024-05-08 18:52:36.097 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 18:52:36.097 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:52:36.097 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:52:39.154 | INFO     | runner:run:32 - running 4
+2024-05-08 18:52:39.155 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 18:52:39.155 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 18:52:39.155 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 18:52:42.251 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 19:16:37.587 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 19:16:37.588 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 19:16:37.588 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-08 19:16:37.588 | INFO     | modifier:generate_array:66 - generated array is:[1, 10, 100, 1000, 10000]
+2024-05-08 19:16:37.588 | INFO     | modifier:generate_array:68 - index is:5
+2024-05-08 19:16:37.588 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7ff3bb7665e0>}
+2024-05-08 19:16:37.588 | INFO     | runner:run:32 - running 0
+2024-05-08 19:16:37.588 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 19:16:37.589 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:16:37.589 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:16:50.557 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 19:16:50.557 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 19:16:50.557 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-08 19:16:50.558 | INFO     | modifier:generate_array:66 - generated array is:[1, 10, 100, 1000, 10000]
+2024-05-08 19:16:50.558 | INFO     | modifier:generate_array:68 - index is:5
+2024-05-08 19:16:50.558 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f66f28013a0>}
+2024-05-08 19:16:50.558 | INFO     | runner:run:32 - running 0
+2024-05-08 19:16:50.558 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 19:16:50.558 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:16:50.558 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:19:23.504 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 19:19:23.504 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 19:19:23.505 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-08 19:19:23.505 | INFO     | modifier:generate_array:66 - generated array is:[1, 10, 100, 1000, 10000]
+2024-05-08 19:19:23.505 | INFO     | modifier:generate_array:68 - index is:5
+2024-05-08 19:19:23.505 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f7909763280>}
+2024-05-08 19:19:23.505 | INFO     | runner:run:32 - running 0
+2024-05-08 19:19:23.505 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 19:19:23.506 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:19:23.506 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:19:40.100 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 19:19:40.100 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 19:19:40.100 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-08 19:19:40.100 | INFO     | modifier:generate_array:66 - generated array is:[1, 10, 100, 1000, 10000]
+2024-05-08 19:19:40.101 | INFO     | modifier:generate_array:68 - index is:5
+2024-05-08 19:19:40.101 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f3ab87f43a0>}
+2024-05-08 19:19:40.101 | INFO     | runner:run:32 - running 0
+2024-05-08 19:19:40.101 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 19:19:40.101 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:19:40.101 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:20:27.571 | INFO     | runner:run:32 - running 1
+2024-05-08 19:20:27.571 | INFO     | modifier:modify:71 - Modifying index is:4
+2024-05-08 19:20:27.572 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:20:27.572 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:21:22.261 | INFO     | runner:run:32 - running 2
+2024-05-08 19:21:22.261 | INFO     | modifier:modify:71 - Modifying index is:3
+2024-05-08 19:21:22.262 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:21:22.262 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:22:16.925 | INFO     | runner:run:32 - running 3
+2024-05-08 19:22:16.925 | INFO     | modifier:modify:71 - Modifying index is:2
+2024-05-08 19:22:16.925 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:22:16.926 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:23:30.776 | INFO     | runner:run:32 - running 4
+2024-05-08 19:23:30.777 | INFO     | modifier:modify:71 - Modifying index is:1
+2024-05-08 19:23:30.777 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 19:23:30.777 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 19:30:41.668 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 22:52:17.132 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 22:52:17.132 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 22:52:17.132 | INFO     | modifier:__init__:36 - 
+configuration of Modifier class:{'subject': None, 'verilog_testbench': None, 'verilog_module': None, 'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'prototype_testbench': None, 'prototype_module': None, 'prototype': 'adder', 'start': 1, 'step': 10, 'mode': 'log', 'end': 10000, 'amount': -1, 'BW': 32, 'N': 1000000, 'array': [], 'index': 0}
+2024-05-08 22:52:17.133 | INFO     | modifier:generate_array:66 - generated array is:[1, 10, 100, 1000, 10000]
+2024-05-08 22:52:17.133 | INFO     | modifier:generate_array:68 - index is:5
+2024-05-08 22:52:17.133 | INFO     | runner:__init__:12 - 
+configuration of Runner class:{'logger': <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink='../outputs/log/{time:YYYY-MM-DD}.log')]>, 'simulator': 'all', 'modifier': <modifier.Modifier object at 0x7f07b3a33580>}
+2024-05-08 22:52:17.133 | INFO     | runner:run:32 - running 0
+2024-05-08 22:52:17.133 | INFO     | modifier:modify:71 - Modifying index is:5
+2024-05-08 22:52:17.133 | INFO     | modifier:load_prototype:126 - loading prototype:../inputs/prototypes/adder_module.json
+2024-05-08 22:52:17.133 | INFO     | modifier:load_prototype:128 - loading prototype:../inputs/prototypes/adder_testbench.json
+2024-05-08 22:52:44.924 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 22:52:44.924 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 22:52:44.925 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 22:53:43.245 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 22:53:43.245 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 22:53:43.245 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 22:53:43.246 | INFO     | dataProcessor:integrate_results:40 - Found files with 'iv' in their names.
+2024-05-08 22:54:58.559 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 22:54:58.559 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 22:54:58.559 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 22:54:58.560 | INFO     | dataProcessor:integrate_results:40 - Found files with 'iv' in their names.
+2024-05-08 22:55:37.152 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 22:55:37.152 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 22:55:37.152 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 22:55:37.152 | INFO     | dataProcessor:integrate_results:40 - Found files with 'iv' in their names.
+2024-05-08 22:55:37.157 | INFO     | dataProcessor:integrate_results:42 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount_*.json
+2024-05-08 22:55:37.158 | INFO     | dataProcessor:integrate_results:44 - Found files with 'qs' in their names.
+2024-05-08 22:55:37.164 | INFO     | dataProcessor:integrate_results:46 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount_*.json
+2024-05-08 22:55:37.164 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 23:46:36.173 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 23:46:36.176 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 23:46:36.177 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 23:46:36.180 | INFO     | dataProcessor:integrate_results:40 - Found files with 'iv' in their names.
+2024-05-08 23:46:36.204 | INFO     | dataProcessor:integrate_results:42 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount_*.json
+2024-05-08 23:46:36.205 | INFO     | dataProcessor:integrate_results:44 - Found files with 'qs' in their names.
+2024-05-08 23:46:36.226 | INFO     | dataProcessor:integrate_results:46 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount_*.json
+2024-05-08 23:46:36.227 | INFO     | __main__:main:29 - ---------------END------------------
+2024-05-08 23:48:23.425 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 23:48:23.427 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 23:48:23.427 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 23:48:23.429 | INFO     | dataProcessor:integrate_results:41 - Found files with 'iv' in their names.
+2024-05-08 23:48:23.431 | INFO     | dataProcessor:integrate_results:43 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-08 23:48:23.432 | INFO     | dataProcessor:integrate_results:45 - Found files with 'qs' in their names.
+2024-05-08 23:48:23.434 | INFO     | dataProcessor:integrate_results:47 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-08 23:49:15.394 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 23:49:15.394 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 23:49:15.395 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 23:49:15.395 | INFO     | dataProcessor:integrate_results:41 - Found files with 'iv' in their names.
+2024-05-08 23:49:15.396 | INFO     | dataProcessor:integrate_results:43 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-08 23:49:15.396 | INFO     | dataProcessor:integrate_results:45 - Found files with 'qs' in their names.
+2024-05-08 23:49:15.397 | INFO     | dataProcessor:integrate_results:47 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-08 23:49:15.402 | INFO     | dataProcessor:json2df:65 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-08 23:50:31.394 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 23:50:31.394 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 23:50:31.394 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 23:50:31.394 | INFO     | dataProcessor:integrate_results:41 - Found files with 'iv' in their names.
+2024-05-08 23:50:31.395 | INFO     | dataProcessor:integrate_results:43 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-08 23:50:31.396 | INFO     | dataProcessor:integrate_results:45 - Found files with 'qs' in their names.
+2024-05-08 23:50:31.396 | INFO     | dataProcessor:integrate_results:47 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-08 23:50:31.401 | INFO     | dataProcessor:json2df:65 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-08 23:51:49.464 | INFO     | __main__:main:23 - ---------------This is a new start------------------
+2024-05-08 23:51:49.465 | INFO     | tester:__init__:24 - {
+    "modifier": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 10000,
+        "step": 10,
+        "mode": "log"
+    },
+    "runner": {
+        "simulator": "all"
+    },
+    "dataProcessor": {
+        "format": "chart",
+        "saveOriginal": true,
+        "description": "This part will be attached to the files name of results"
+    }
+}
+2024-05-08 23:51:49.465 | INFO     | dataProcessor:__init__:19 - 
+configuration of DataProcessor class:{'format': 'chart', 'saveOriginal': True, 'description': 'This part will be attached to the files name of results'}
+2024-05-08 23:51:49.465 | INFO     | dataProcessor:integrate_results:41 - Found files with 'iv' in their names.
+2024-05-08 23:51:49.466 | INFO     | dataProcessor:integrate_results:43 - Integrated results of 'IVerilog' at: ../outputs/result/result_iv_amount.json
+2024-05-08 23:51:49.467 | INFO     | dataProcessor:integrate_results:45 - Found files with 'qs' in their names.
+2024-05-08 23:51:49.468 | INFO     | dataProcessor:integrate_results:47 - Integrated results of 'Questasim' at: ../outputs/result/result_qs_amount.json
+2024-05-08 23:51:49.472 | INFO     | dataProcessor:json2df:65 - Final results of 'IVerilog' at:../outputs/result/final_result_iv.csv
+2024-05-08 23:51:49.475 | INFO     | dataProcessor:json2df:69 - Final results of 'Questasim' at:../outputs/result/final_result_qs.csv
+2024-05-08 23:51:49.476 | INFO     | __main__:main:29 - ---------------END------------------

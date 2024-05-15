@@ -1,0 +1,39 @@
+{
+    "config_infos": {
+        "prototype": "adder",
+        "BW": 32,
+        "N": 1000000,
+        "amount": -1,
+        "start": 1,
+        "end": 100,
+        "step": 10,
+        "mode": "log"
+    },
+    "simulator": "qs",
+    "subject": "amount",
+    "values": [
+        "1",
+        "10",
+        "100"
+    ],
+    "compile_time": [
+        "0:00.04",
+        "0:00.02",
+        "0:00.02"
+    ],
+    "compile_memory": [
+        "21880",
+        "21912",
+        "21844"
+    ],
+    "simulate_time": [
+        "0:00:39",
+        "0:00:18",
+        "0:00:17"
+    ],
+    "simulate_memory": [
+        "5593832",
+        "5595120",
+        "5597168"
+    ]
+}

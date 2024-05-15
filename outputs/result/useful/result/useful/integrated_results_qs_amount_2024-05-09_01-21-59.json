@@ -1,0 +1,24 @@
+{
+    "simulator": "qs",
+    "subject": "amount",
+    "values": [
+        "2",
+        "4"
+    ],
+    "compile_time": [
+        "0:00.02",
+        "0:00.03"
+    ],
+    "compile_memory": [
+        "21844",
+        "21848"
+    ],
+    "simulate_time": [
+        "0:00:24",
+        "0:00:22"
+    ],
+    "simulate_memory": [
+        "5593916",
+        "5593964"
+    ]
+}

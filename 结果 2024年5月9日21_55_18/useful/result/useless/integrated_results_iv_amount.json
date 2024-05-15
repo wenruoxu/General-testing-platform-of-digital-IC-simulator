@@ -1,0 +1,24 @@
+{
+    "simulator": "iv",
+    "subject": "amount",
+    "values": [
+        "2",
+        "4"
+    ],
+    "compile_time": [
+        "0:00.03",
+        "0:00.03"
+    ],
+    "compile_memory": [
+        "34116",
+        "34248"
+    ],
+    "simulate_time": [
+        "0:00.14",
+        "0:00.20"
+    ],
+    "simulate_memory": [
+        "4392",
+        "4400"
+    ]
+}

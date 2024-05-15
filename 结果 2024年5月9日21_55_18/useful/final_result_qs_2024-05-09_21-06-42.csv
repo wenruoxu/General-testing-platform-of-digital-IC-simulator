@@ -1,0 +1,4 @@
+values,compile_time,compile_memory,simulate_time,simulate_memory
+10000,0.02,21856,1.0,184556
+50000,0.02,21840,2.0,408972
+250000,0.02,21852,5.0,1522244
